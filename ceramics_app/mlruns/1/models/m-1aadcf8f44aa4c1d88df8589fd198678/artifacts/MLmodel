@@ -1,0 +1,77 @@
+artifact_path: /content/mlruns/1/models/m-1aadcf8f44aa4c1d88df8589fd198678/artifacts
+flavors:
+  python_function:
+    data: model.ubj
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.xgboost
+    python_version: 3.13.16
+  xgboost:
+    code: null
+    data: model.ubj
+    model_class: xgboost.sklearn.XGBRegressor
+    model_format: ubj
+    xgb_version: 3.4.1
+is_signature_from_type_hint: false
+mlflow_version: 3.17.0
+model_id: m-1aadcf8f44aa4c1d88df8589fd198678
+model_size_bytes: 809177
+model_uuid: m-1aadcf8f44aa4c1d88df8589fd198678
+prompts: null
+run_id: 8d215fbf15f94fd096fe94dea6ea14b0
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "long", "name": "is_holiday_season", "required": true}, {"type":
+    "double", "name": "lag_1", "required": true}, {"type": "double", "name": "lag_4",
+    "required": true}, {"type": "integer", "name": "month", "required": true}, {"type":
+    "boolean", "name": "product_item_1", "required": true}, {"type": "boolean", "name":
+    "product_item_10", "required": true}, {"type": "boolean", "name": "product_item_11",
+    "required": true}, {"type": "boolean", "name": "product_item_12", "required":
+    true}, {"type": "boolean", "name": "product_item_13", "required": true}, {"type":
+    "boolean", "name": "product_item_14", "required": true}, {"type": "boolean", "name":
+    "product_item_15", "required": true}, {"type": "boolean", "name": "product_item_16",
+    "required": true}, {"type": "boolean", "name": "product_item_17", "required":
+    true}, {"type": "boolean", "name": "product_item_18", "required": true}, {"type":
+    "boolean", "name": "product_item_19", "required": true}, {"type": "boolean", "name":
+    "product_item_2", "required": true}, {"type": "boolean", "name": "product_item_20",
+    "required": true}, {"type": "boolean", "name": "product_item_21", "required":
+    true}, {"type": "boolean", "name": "product_item_22", "required": true}, {"type":
+    "boolean", "name": "product_item_23", "required": true}, {"type": "boolean", "name":
+    "product_item_24", "required": true}, {"type": "boolean", "name": "product_item_25",
+    "required": true}, {"type": "boolean", "name": "product_item_26", "required":
+    true}, {"type": "boolean", "name": "product_item_27", "required": true}, {"type":
+    "boolean", "name": "product_item_28", "required": true}, {"type": "boolean", "name":
+    "product_item_29", "required": true}, {"type": "boolean", "name": "product_item_3",
+    "required": true}, {"type": "boolean", "name": "product_item_30", "required":
+    true}, {"type": "boolean", "name": "product_item_31", "required": true}, {"type":
+    "boolean", "name": "product_item_32", "required": true}, {"type": "boolean", "name":
+    "product_item_33", "required": true}, {"type": "boolean", "name": "product_item_34",
+    "required": true}, {"type": "boolean", "name": "product_item_35", "required":
+    true}, {"type": "boolean", "name": "product_item_36", "required": true}, {"type":
+    "boolean", "name": "product_item_37", "required": true}, {"type": "boolean", "name":
+    "product_item_38", "required": true}, {"type": "boolean", "name": "product_item_39",
+    "required": true}, {"type": "boolean", "name": "product_item_4", "required": true},
+    {"type": "boolean", "name": "product_item_40", "required": true}, {"type": "boolean",
+    "name": "product_item_41", "required": true}, {"type": "boolean", "name": "product_item_42",
+    "required": true}, {"type": "boolean", "name": "product_item_43", "required":
+    true}, {"type": "boolean", "name": "product_item_44", "required": true}, {"type":
+    "boolean", "name": "product_item_45", "required": true}, {"type": "boolean", "name":
+    "product_item_46", "required": true}, {"type": "boolean", "name": "product_item_47",
+    "required": true}, {"type": "boolean", "name": "product_item_48", "required":
+    true}, {"type": "boolean", "name": "product_item_49", "required": true}, {"type":
+    "boolean", "name": "product_item_5", "required": true}, {"type": "boolean", "name":
+    "product_item_50", "required": true}, {"type": "boolean", "name": "product_item_6",
+    "required": true}, {"type": "boolean", "name": "product_item_7", "required": true},
+    {"type": "boolean", "name": "product_item_8", "required": true}, {"type": "boolean",
+    "name": "product_item_9", "required": true}, {"type": "double", "name": "rolling_mean_4",
+    "required": true}, {"type": "double", "name": "rolling_mean_8", "required": true},
+    {"type": "long", "name": "week_of_year", "required": true}]'
+  outputs: '[{"type": "float", "required": true}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-10-07 21:03:12.555722'
